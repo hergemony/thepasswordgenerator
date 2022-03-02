@@ -1,67 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Password Generator</title>
-<link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <!-- This is the first step in making the document responsive but scaling the items to screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hergemony Homework-3 Random Password Generator -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- This is the title-->
+    <title>Password Generator</title>
+    <!-- These are the style links. Reset CSS and Styles CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 
 </head>
+<!-- This is the body -->
+
 <body>
-    <div class="container">
+    <!-- Demo video, watch it work!-->
+    <a href="https://drive.google.com/file/d/10da4Te-ywl3aBuG3pL4jRAxBcFI6w871/view" target="_blank">demo
+        video</a>
+    <!--This is the wrapper container with all of the content-->
+    <div id="wrapper">
         <header>
             <h1>Password Generator</h1>
         </header>
-        <div class="card">
-            <div class=""card-header">
+        <!--This is the content area-->
+        <div id="content">
             <h2>Generate a Password</h2>
+            <hr>
+            <!-- This is a readonly text area for output-->
+            <textarea readonly id="password" placeholder="Your Secure Password"
+                aria-label="Generated Password"></textarea>
+            <hr>
+            <!-- This is the div for the buttons -->
+            <div id="btn">
+                <!-- This is the generate password button -->
+                <button id="generate">Generate
+                    Password</button>
+                <!-- This is the copy button -->
+                <button id="copy">Copy to Clipboard</button>
+
+
+            </div>
         </div>
     </div>
-    <div class="form">
-        <textarea
-        readonly
-        id="password"
-        placeholder="Your Secure Password"
-        aria-label="Generate Password"
-        ></textarea>
-    </div>
-
-<form>
-    <label for="Press Enter" class="label"></label>
-    <div>
-    <input type="range" id="input-length" min="8" max="128">
-    <span id="span-length-display"></span>
-    </div>
-
-    <div>
-    <input type="checkbox" id="input-lowercase"check>
-    <label for="input-lowercase">lowercase</label>
-
-    </div>
-
-    <div>
-        <input type="checkbox" id="input-uppercase"/>
-        <label for="input-uppercase">uppercase</label>
-    </div>
-    <div>
-        <input type="checkbox" id="input-number"/>
-        <label for="input-number">number</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="input-symbol"/>
-        <label for="input-symbol">symbol</label>
-    </div>
 
 
-</form>
-
-<div class="card-footer">
-<button id="generate" class="btn">Generate Password</button>
-</div>
-
-<script src="script.js"></script>
-
+    <!-- This is the Javascript document-->
+    <script src="script.js"></script>
 </body>
+
 </html>
