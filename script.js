@@ -1,14 +1,18 @@
 
 
-// Start working code
+// Start working code: 
+// N.B. In Javascript, an array is a list of elements may it be string, numbers, Boolean, etc. 
+// Concatenation: The word concatenate is just another way of saying "to combine" or "to join together". The CONCATENATE function allows you to combine text from different cells into one cell. Concatination is adding two arrays or more than 2 arrays. Similar to add, array1+ array2, concat () method works similarly in javascript. It appends the array elements at the end of the array to which the user wants to combine. (Source: www.educba.com/javascript-array-concat/)
+// The Password Generator utilises the concatenation function within javascript
+
 // User input variables: 
 var enter;
 var confirmNumber;
 var confirmCharacter;
 var confirmUppercase;
 var confirmLowercase;
-// Start Password variable values: 
-// Special characters 
+// Start with setting Password variable values: 
+// Special characters
 character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 // Numeric characters
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -32,29 +36,29 @@ get.addEventListener("click", function () {
     document.getElementById("password").placeholder = ps;
 });
 
-// Start function to generate password
+// Start function to generate password using string
 function generatePassword() {
     // Asks for user input
-    enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
-    // First if statement for user validation 
+    enter = parseInt(prompt("What is the length of your password? Choose between 8 and 128"));
+    // First if statement for user validation (using logial comparison operators || = or)
     if (!enter) {
-        alert("This needs a value");
+        alert("Please input a value");
     } else if (enter < 8 || enter > 128) {
         // Validates user input
         // Start user input prompts
-        enter = parseInt(prompt("You must choose between 8 and 128"));
+        enter = parseInt(prompt("Please choose a number between 8 and 128 (inclusive)"));
 
     } else {
         // Continues once user input is validated
-        confirmNumber = confirm("Will this contain numbers?");
-        confirmCharacter = confirm("Will this contain special characters?");
-        confirmUppercase = confirm("Will this contain Uppercase letters?");
-        confirmLowercase = confirm("Will this contain Lowercase letters?");
+        confirmNumber = confirm("Do you want the password to contain numbers?");
+        confirmCharacter = confirm("Do you want the password to contain special characters?");
+        confirmUppercase = confirm("Do you want the password to contain Uppercase letters?");
+        confirmLowercase = confirm("Do you want the password to contain Lowercase letters?");
     };
 
     // Else if for 4 negative options
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-        choices = alert("You must choose a criteria!");
+        choices = alert("Please choose a criteria in order to continue");
 
     }
     // First if statement that uses user input prompts to determine choices
@@ -142,5 +146,5 @@ copy.addEventListener("click", function () {
 function copyPassword() {
     document.getElementById("password").select();
     document.execCommand("Copy");
-    alert("Password copied to clipboard!");
+    alert("Password has been copied to clipboard!");
 }

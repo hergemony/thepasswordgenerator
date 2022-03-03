@@ -1,11 +1,10 @@
-/* Jamie Morris Homework-3 Random Password Generator */
-/* Styles for Homework 3 */
+/* Hergemony - "The Password Generator" */
 /* Styles for body */
 body {
   background-color: #E8E8E8;
   margin: 0 auto;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #696969;
+  color: #4b4949;
 }
 /* Styles for the wrapper div */
 #wrapper {
@@ -21,7 +20,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   background-color: #FFFFFF;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 20px #888888;
 
 }
 /* Styles for h1 */
@@ -56,41 +55,53 @@ textarea {
   color: #696969;
   font-size: 18px;
 }
-/* Styles for button div */
+/* Styles for button div, incorporating pseudo classes */
 #btn {
   margin-top: 20px;
 }
+
+#btn {
+  font-size: 19px;
+}
+
 /* Styles for generate button */
 #generate {
-  background-color: #f44336;
+  background-color: red;
   font-size: 20px;
   padding: 14px 40px;
   border-radius: 15px;
   margin-left: 18%;
   margin-bottom: 10px;
 }
+
+#generate:hover {
+  background-color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: wait;
+}
 /* Styles for copy button */
 #copy {
-  background-color: #e7e7e7;
+  background-color: green;
   font-size: 20px;
   padding: 14px 40px;
   border-radius: 15px;
-  margin-left: 10px;
+  margin-left: 18%;
   margin-bottom: 10px;
 }
 
-/* Start Media Query */
-/* A Media Query max-width: 980px */
-@media screen and (max-width: 980px) {
-  /* Resized content to fit 980px  */
-  body {
-      max-width: 980px;
-  }   
+#copy:hover {
+  background-color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: wait;
+}
+
   /* Styles for the wrapper div */
   #wrapper {
       width: 100%;
       }
-}
+
   /* A Media Query max-width: 786px */
   @media screen and (max-width: 786px) {
   /* Resized content to fit 786px  */
@@ -134,5 +145,12 @@ textarea {
           
       }
   
+  }
+
+/* styles for original hergemony brand footer */
+
+  #footer {
+    text-align: center;
+    font-size: 8px;
   }
   
