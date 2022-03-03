@@ -124,7 +124,6 @@ function generatePassword() {
         password.push(pickChoices);
     }
     // This joins the password array and converts it to a string
-    // Worked with a tutor to incorporate this option
     var ps = password.join("");
     UserInput(ps);
     return ps;
@@ -140,7 +139,7 @@ var copy = document.querySelector("#copy");
 copy.addEventListener("click", function () {
     copyPassword();
 });
-// This copies the password value - works
+// This copies the password value to clipboard
 // Code example demonstrated in a youtube video: 
 // Source: https://youtu.be/9sT03jEwcaw
 function copyPassword() {
