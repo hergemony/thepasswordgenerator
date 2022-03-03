@@ -1,6 +1,6 @@
-The Password Generator
+**The Password Generator** 🔏
 
-WELCOME!
+*WELCOME!*
 
 This project was designed as a homework assignment for UWA's coding bootcamp.
 
@@ -18,7 +18,7 @@ This textarea will display the users password once it has been generated
 A Copy button
 This will copy the generated password to the user's devices clipboard
 
-SCREENSHOTS:
+**SCREENSHOTS**
 
 1) The user will be prompted to choose from the following password criteria: 8 and 128 characters
 ![alt text](https://github.com/hergemony/Password-Generator/blob/main/assets/Screen%20Shot%202022-03-03%20at%205.31.11%20pm.png?raw=true)
@@ -45,9 +45,9 @@ Copy execCommand in event listener
 ![alt text](https://github.com/hergemony/Password-Generator/blob/main/assets/Screen%20Shot%202022-03-03%20at%205.31.45%20pm.png?raw=true)
 
 
-This project has Javascript features of:
+**Javascript features**
 - Variable declaration area
-- An event listener (onclick) called generatePassword
+- An event listener (onclick) called generatePassword 
 - A prompt for the user to input a number between 8-128
 - This variable is changed to an integer using ParseInt()
 - This will validate that the input is a number within range, or is a number
@@ -59,7 +59,7 @@ This project has Javascript features of:
 - The string value then populates into the text area for the user using a UserInput function.
 - An event listener (onclick) has also been created for the copy to clipboard feauture called copyPassword.
 
-Features:
+**Github Repository Features**
 One HTML Pages (Index.html - Contains basic user input items and buttons with divs and ids)
 Two CSS Pages
 - Styles.css
@@ -69,7 +69,7 @@ Contains media queries
 One Javascript Page * Contains: * Variables, including arrays and value placeholders * Two event listeners * Two if/else if statements * One function outside of first event listener
 Images of screenshots to show example of 'The Password Generator' in action
 
-Thank you for viewing!
+*Thank you for viewing!*
 
 Github Profile Link => https://github.com/hergemony
 
