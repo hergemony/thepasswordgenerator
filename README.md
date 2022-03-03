@@ -60,14 +60,11 @@ Copy execCommand in event listener
 - An event listener (onclick) has also been created for the copy to clipboard feauture called copyPassword.
 
 **Github Repository Features**
-One HTML Pages (Index.html - Contains basic user input items and buttons with divs and ids)
-Two CSS Pages
-- Styles.css
-- Reset.css
-Contains centering and styling for html user input features
-Contains media queries
-One Javascript Page * Contains: * Variables, including arrays and value placeholders * Two event listeners * Two if/else if statements * One function outside of first event listener
-Images of screenshots to show example of 'The Password Generator' in action
+
+- One HTML Pages (Index.html - Contains basic user input items and buttons with divs and ids)
+- Two CSS Pages (Styles.css and Reset.css)
+- One Javascript Page * Contains: * Variables, including arrays and value placeholders * Two event listeners * Two if/else if statements * One function outside of first event listener
+- Images of screenshots to show example of 'The Password Generator' in action
 
 *Thank you for viewing!*
 
@@ -78,5 +75,5 @@ Deployed Application Link => https://hergemony.github.io/Password-Generator/
 ❤ Hergemony Digital Services 2022 ❤
 
 
-Acknowledgments:
+*Acknowledgments*
 The Teachers, Tutors and Team @ UWA CODING BOOTCAMP
